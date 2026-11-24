@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zyn (Gede Agus Wira Darma Putra) | Student developer in Bali</title>
+<meta name="description" content="Projects by Gede Agus Wira Darma Putra (Zyn, zynxx24), a software engineering student at SMKN 2 Kuta Selatan, Bali: an open-source AI agent, Laravel and Vue web apps, Android class cash apps, and a C HTTP server.">
+<link rel="canonical" href="https://zynxx24.github.io/">
+<meta name="author" content="Gede Agus Wira Darma Putra">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#FFFDF5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1A1814" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="zynxx24">
+<meta property="og:title" content="Zyn (Gede Agus Wira Darma Putra) | Student developer in Bali">
+<meta property="og:description" content="An open-source AI agent, Laravel and Vue web apps, Android class cash apps, and a C HTTP server, built by a software engineering student in Bali.">
+<meta property="og:url" content="https://zynxx24.github.io/">
+<meta property="og:image" content="https://zynxx24.github.io/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="profile:username" content="zynxx24">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="assets/fonts/Unbounded-800.woff2" as="font" type="font/woff2" crossorigin>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://zynxx24.github.io/#me",
+      "name": "Gede Agus Wira Darma Putra",
+      "alternateName": ["Zyn", "zynxx24", "Guswira"],
+      "url": "https://zynxx24.github.io/",
+      "jobTitle": "Student developer",
+      "affiliation": { "@type": "EducationalOrganization", "name": "SMKN 2 Kuta Selatan" },
+      "address": { "@type": "PostalAddress", "addressRegion": "Bali", "addressCountry": "ID" },
+      "knowsAbout": ["Python", "PHP", "Laravel", "Vue", "TypeScript", "Kotlin", "Jetpack Compose", "C", "Rust"],
+      "sameAs": [
+        "https://github.com/zynxx24",
+        "https://linkedin.com/in/gdeaguswiradarmaputra",
+        "https://instagram.com/gdeguswiradarmaputra"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://zynxx24.github.io/#site",
+      "url": "https://zynxx24.github.io/",
+      "name": "zynxx24",
+      "inLanguage": "en",
+      "author": { "@id": "https://zynxx24.github.io/#me" }
+    }
+  ]
+}
+</script>
+<style>
+@font-face { font-family: "Unbounded"; src: url("assets/fonts/Unbounded-800.woff2") format("woff2"); font-weight: 800; font-display: swap; }
+@font-face { font-family: "Space Grotesk"; src: url("assets/fonts/SpaceGrotesk.woff2") format("woff2"); font-weight: 300 700; font-display: swap; }
+
+:root {
+  --bg: #FFFDF5;
+  --panel: #FFFFFF;
+  --ink: #111111;
+  --muted: #4A4740;
+  --line: #111111;
+  --accent: #FF90E8;
+  --accent-ink: #111111;
+  --link: #8A1A72;
+  --shadow: 4px 4px 0 var(--line);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1A1814; --panel: #24211C; --ink: #F6F1E7; --muted: #C9C2B4;
+    --line: #F6F1E7; --link: #FFB3EF; --shadow: 4px 4px 0 #000;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #1A1814; --panel: #24211C; --ink: #F6F1E7; --muted: #C9C2B4;
+  --line: #F6F1E7; --link: #FFB3EF; --shadow: 4px 4px 0 #000;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 400 1.0625rem/1.6 "Space Grotesk", system-ui, sans-serif;
+}
+img { display: block; max-width: 100%; height: auto; }
+a { color: var(--link); text-underline-offset: 3px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+.wrap { width: min(1080px, 100% - 32px); margin-inline: auto; }
+h1, h2, h3 { font-family: "Unbounded", system-ui, sans-serif; font-weight: 800; line-height: 1.1; margin: 0; letter-spacing: -0.01em; }
+h2 { font-size: clamp(1.5rem, 3.5vw, 2.25rem); }
+h3 { font-size: 1.25rem; }
+
+/* header */
+.top { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 20px; }
+.brand { font-family: "Unbounded", sans-serif; font-weight: 800; font-size: 1.125rem; color: var(--ink); text-decoration: none; min-height: 44px; display: inline-flex; align-items: center; }
+.top nav { display: flex; gap: 2px; }
+@media (min-width: 600px) { .top nav { gap: 8px; } .top nav a { padding-inline: 12px; } }
+.top nav a { color: var(--ink); text-decoration: none; font-weight: 600; padding: 10px 8px; min-height: 44px; display: inline-flex; align-items: center; border-radius: 6px; }
+.top nav a:hover { background: var(--panel); text-decoration: underline; }
+
+/* hero */
+.hero { padding-block: clamp(40px, 8vw, 96px) clamp(48px, 8vw, 88px); display: grid; gap: 28px; }
+.hero h1 { font-size: clamp(2.25rem, 7vw, 4.5rem); max-width: 14ch; }
+.hero h1 mark { background: var(--accent); color: var(--accent-ink); padding: 0 .08em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+.hero p { max-width: 60ch; margin: 0; font-size: 1.1875rem; color: var(--muted); }
+.hero p strong { color: var(--ink); }
+.actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn {
+  display: inline-flex; align-items: center; min-height: 48px; padding: 0 20px;
+  font-weight: 700; text-decoration: none; color: var(--ink);
+  border: 2px solid var(--line); border-radius: 6px; background: var(--panel);
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.btn.primary { background: var(--accent); color: var(--accent-ink); border-color: #111; box-shadow: var(--shadow); }
+.btn.primary:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--line); }
+.btn:not(.primary):hover { text-decoration: underline; }
+
+section { padding-block: clamp(40px, 7vw, 80px); border-top: 2px solid var(--line); }
+.lede { color: var(--muted); max-width: 62ch; margin: 12px 0 0; }
+
+/* featured projects: alternating rows */
+.feature { display: grid; gap: 24px; align-items: center; margin-top: 48px; }
+.feature .text h3 { font-size: clamp(1.375rem, 3vw, 1.75rem); }
+.feature .meta { font-size: .9375rem; font-weight: 600; color: var(--muted); margin: 6px 0 12px; }
+.feature .text p { margin: 0 0 16px; max-width: 56ch; }
+.feature .links { display: flex; gap: 8px 20px; flex-wrap: wrap; font-weight: 600; }
+.feature .links a { min-height: 44px; display: inline-flex; align-items: center; }
+.shot { border: 2px solid var(--line); border-radius: 6px; overflow: hidden; box-shadow: var(--shadow); background: var(--panel); }
+.phones { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.phones figure { margin: 0; }
+.phones figcaption { font-size: .875rem; font-weight: 600; margin-top: 8px; text-align: center; }
+.panel { border: 2px solid var(--line); border-radius: 6px; background: var(--panel); padding: 20px 24px; box-shadow: var(--shadow); }
+.panel-title { font-family: "Unbounded", sans-serif; font-weight: 800; margin: 0 0 12px; }
+.agent-points { margin: 0; padding-left: 1.1em; }
+.agent-points li { margin-bottom: 8px; }
+.agent-points li:last-child { margin-bottom: 0; }
+@media (min-width: 820px) {
+  .feature { grid-template-columns: 1.05fr 1fr; gap: 48px; }
+  .feature.flip .media { order: -1; }
+  .feature.text-only { grid-template-columns: 1fr; }
+}
+
+/* more projects: plain list */
+.more { list-style: none; padding: 0; margin: 32px 0 0; border-top: 2px solid var(--line); }
+.more li { display: grid; gap: 4px 24px; padding: 18px 0; border-bottom: 1px solid color-mix(in srgb, var(--line) 35%, transparent); }
+.more a.name { font-weight: 700; font-size: 1.125rem; min-height: 44px; display: inline-flex; align-items: center; }
+.more .stack { font-size: .875rem; color: var(--muted); font-weight: 600; }
+.more p { margin: 0; }
+@media (min-width: 820px) { .more li { grid-template-columns: 260px 1fr; align-items: baseline; } .more .right { grid-column: 2; } }
+
+/* now + contact */
+.cols { display: grid; gap: 40px; }
+@media (min-width: 820px) { .cols { grid-template-columns: 1fr 1fr; } }
+.now { margin: 16px 0 0; padding-left: 1.1em; }
+.now li { margin-bottom: 10px; }
+.contact { list-style: none; padding: 0; margin: 16px 0 0; display: grid; gap: 4px; }
+.contact a { font-weight: 700; min-height: 44px; display: inline-flex; align-items: center; }
+
+footer { border-top: 2px solid var(--line); padding-block: 28px 40px; font-size: .9375rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 12px 24px; justify-content: space-between; align-items: center; }
+.theme { font: inherit; font-weight: 600; color: var(--ink); background: var(--panel); border: 2px solid var(--line); border-radius: 6px; min-height: 44px; padding: 0 14px; cursor: pointer; }
+
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+<script>
+  try { var t = localStorage.getItem("theme"); if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="/">zynxx24</a>
+    <nav aria-label="Main">
+      <a href="#projects">Projects</a>
+      <a href="#now">Now</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1>Hi, I'm Zyn. I build things my <mark>class actually uses.</mark></h1>
+      <p>I'm <strong>Gede Agus Wira Darma Putra</strong>, a software engineering (PPLG) student at SMKN 2 Kuta Selatan in Bali. My class needed a way to track cash, so it got a web dashboard, then three Android apps. Most of my time now goes into SquidWings, an open-source AI agent that speaks Bahasa Indonesia.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">See the projects</a>
+        <a class="btn" href="https://github.com/zynxx24">GitHub profile</a>
+      </div>
+    </div>
+
+    <section id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
+      <p class="lede">The four I'd show first. Every one has its source on GitHub.</p>
+
+      <article class="feature">
+        <div class="text">
+          <h3>SquidWings</h3>
+          <p class="meta">Python · AGPL-3.0 · terminal and web</p>
+          <p>An open-source AI agent for the terminal and the browser, in Bahasa Indonesia. It works with any OpenAI-compatible model, including Claude, GPT, Gemini, DeepSeek and local models through Ollama.</p>
+          <div class="links"><a href="https://github.com/zynxx24/SquidWings">Source and docs</a></div>
+        </div>
+        <div class="media panel">
+          <p class="panel-title">What it can do</p>
+          <ul class="agent-points">
+            <li>Change files, run commands in a sandbox, and check its own work</li>
+            <li>Research the web and list its sources</li>
+            <li>Read PDFs, Office files and scans with local OCR</li>
+            <li>Run agent teams on an n8n-style workflow canvas</li>
+            <li>Edit video in the browser, and an MT4/MT5 trading panel</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="feature">
+        <div class="text">
+          <h3>CateringKu</h3>
+          <p class="meta">Laravel 13 · Vue 3 · Inertia · Tailwind</p>
+          <p>A catering marketplace with separate customer, vendor and admin roles. Prices and promo codes are calculated on the server, checkout runs in a database transaction, and 72 Pest tests cover carts, checkout and access control.</p>
+          <div class="links"><a href="https://github.com/zynxx24/CateringKu-ZynxWira-">Source and screenshots</a></div>
+        </div>
+        <div class="media shot">
+          <img src="assets/img/cateringku.webp" width="960" height="600" alt="CateringKu home page with a search bar, food categories and featured catering vendors" fetchpriority="high">
+        </div>
+      </article>
+
+      <article class="feature flip">
+        <div class="text">
+          <h3>Class cash, three ways</h3>
+          <p class="meta">Kotlin · Jetpack Compose · works offline</p>
+          <p>Three Android apps for the XII PPLG class cash, each built with a different group: weekly dues, late fines, payment history and reports. Only the treasurer can mark a payment as paid; students send a WhatsApp confirmation from the app.</p>
+          <div class="links">
+            <a href="https://github.com/zynxx24/KasTep">KasTep</a>
+            <a href="https://github.com/zynxx24/AppCash">AppCash</a>
+            <a href="https://github.com/zynxx24/kasku">KasKu</a>
+          </div>
+        </div>
+        <div class="media phones">
+          <figure><div class="shot"><img src="assets/img/kastep.webp" width="360" height="640" alt="KasTep dashboard in a black theme with balance, income and expense cards" loading="lazy"></div><figcaption>KasTep</figcaption></figure>
+          <figure><div class="shot"><img src="assets/img/appcash.webp" width="360" height="640" alt="AppCash dashboard in orange with the class balance and a weekly chart" loading="lazy"></div><figcaption>AppCash</figcaption></figure>
+          <figure><div class="shot"><img src="assets/img/kasku.webp" width="360" height="640" alt="KasKu home screen in blue with the cash balance and who has paid" loading="lazy"></div><figcaption>KasKu</figcaption></figure>
+        </div>
+      </article>
+
+      <article class="feature">
+        <div class="text">
+          <h3>Kas XII PPLG</h3>
+          <p class="meta">C · vanilla JavaScript</p>
+          <p>The web version of the class cash book. The backend is an HTTP server I wrote in C with no framework: routing, token sessions, SHA-256 password hashes, per-IP rate limits and encrypted backups. A read-only copy runs on GitHub Pages.</p>
+          <div class="links">
+            <a href="https://github.com/zynxx24/Kas-XIIPPLG---cash-management">Source</a>
+            <a href="https://zynxx24.github.io/XII-PPLG---CASH-EXPORTED/">Read-only demo</a>
+          </div>
+        </div>
+        <div class="media shot">
+          <img src="assets/img/kas-xii-pplg.webp" width="960" height="504" alt="Kas XII PPLG dashboard with the class balance, income, donations and a balance chart" loading="lazy">
+        </div>
+      </article>
+
+      <h3 style="margin-top:64px">More</h3>
+      <ul class="more">
+        <li>
+          <a class="name" href="https://github.com/zynxx24/zoycoin">Zoycoin</a>
+          <div class="right"><p>A Bitcoin-style transaction backend: UTXO model, secp256k1 signatures, proof-of-work and a fee market, stored in SQLite.</p><span class="stack">Rust · axum</span></div>
+        </li>
+        <li>
+          <a class="name" href="https://zynxx24.github.io/XI-PPLG/general/">XI PPLG class website</a>
+          <div class="right"><p>Our class site from grade 11: timetable, duty roster, class cash, photo gallery and news pulled from Google Sheets. <a href="https://github.com/zynxx24/XI-PPLG">Source</a></p><span class="stack">HTML · Tailwind · JavaScript</span></div>
+        </li>
+        <li>
+          <a class="name" href="https://github.com/zynxx24/Joki_Nisa_IT_S1">Employee attendance</a>
+          <div class="right"><p>Employees check in with a photo, admins review, correct and export attendance to CSV.</p><span class="stack">Next.js · TypeScript · MySQL</span></div>
+        </li>
+        <li>
+          <a class="name" href="https://github.com/zynxx24/xrpl">X RPL class website</a>
+          <div class="right"><p>News, gallery and a member list where admins approve cash payments. The Express API stores everything in Excel files.</p><span class="stack">Next.js 15 · Express</span></div>
+        </li>
+        <li>
+          <a class="name" href="https://zynxx24.github.io/p5/">Warisan Kuliner Bali</a>
+          <div class="right"><p>A school project about two Balinese dishes, Mujair Nyat-Nyat and Sambel Adam, with a review form backed by Google Sheets. <a href="https://github.com/zynxx24/p5">Source</a></p><span class="stack">HTML · Tailwind</span></div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="now" aria-labelledby="now-title">
+      <div class="cols">
+        <div>
+          <h2 id="now-title">Right now</h2>
+          <ul class="now">
+            <li>Making SquidWings run well on cheap models: checking tool results, breaking loops, escalating only when needed.</li>
+            <li>Hardening my web apps against the usual holes (OWASP Top 10) and writing tests for them.</li>
+            <li>Learning more Linux and security on the side.</li>
+          </ul>
+        </div>
+        <div id="contact">
+          <h2>Say hi</h2>
+          <ul class="contact">
+            <li><a href="https://linkedin.com/in/gdeaguswiradarmaputra">LinkedIn</a></li>
+            <li><a href="https://instagram.com/gdeguswiradarmaputra">Instagram</a></li>
+            <li><a href="https://github.com/zynxx24">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Gede Agus Wira Darma Putra · Bali, Indonesia</span>
+    <button class="theme" type="button" id="theme" aria-label="Switch colour theme">Theme: auto</button>
+  </footer>
+</div>
+<script>
+  (function () {
+    var btn = document.getElementById("theme"), root = document.documentElement;
+    var order = ["auto", "light", "dark"];
+    function current() { return root.dataset.theme || "auto"; }
+    function render() { btn.textContent = "Theme: " + current(); }
+    btn.addEventListener("click", function () {
+      var next = order[(order.indexOf(current()) + 1) % order.length];
+      if (next === "auto") { delete root.dataset.theme; } else { root.dataset.theme = next; }
+      try { next === "auto" ? localStorage.removeItem("theme") : localStorage.setItem("theme", next); } catch (e) {}
+      render();
+    });
+    render();
+  })();
+</script>
+</body>
+</html>

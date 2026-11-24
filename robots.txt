@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zynxx24.github.io/sitemap.xml
+Sitemap: https://zynxx24.github.io/XI-PPLG/sitemap.xml
+Sitemap: https://zynxx24.github.io/portfolio/sitemap.xml
+Sitemap: https://zynxx24.github.io/p5/sitemap.xml
